@@ -21,7 +21,7 @@ set purplecolor "seta cg_enemyUpperColor 0xFF00FFFF; seta cg_enemyLowerColor 0xF
 set whitecolor "seta cg_enemyUpperColor 0xFFFFFF88; seta cg_enemyLowerColor 0xFFFFFF88; seta cg_enemyHeadColor 0xFFFFFF88; set enemycolor vstr greencolor; print ^7White Enemies"<br>
 <br><br>
 # Cycling through map brigtness settings
-<b>If you leave it undedited it will use the . key to cycle through the brightnesses</b>
+<b>If you leave it undedited it will use the . key to cycle through the brightnesses</b><br>
 seta r_gamma "1.4"<br>
 bind . "vstr brightness"<br>
 set brightness "vstr upbright1"<br>
