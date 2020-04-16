@@ -31,3 +31,14 @@ set upbright3 "seta r_gamma 1.4; set brightness vstr upbright4"<br>
 set upbright4 "seta r_gamma 1.6; set brightness vstr upbright5"<br>
 set upbright5 "seta r_gamma 1.8; set brightness vstr dnbright6"<br>
 set dnbright6 "seta r_gamma 2.0; set brightness vstr upbright1"<br>
+<br><br>
+# Menu to callvote Shufffle, exec ca config, exec wipeout config
+<b>If you leave it undedited it will use the arrow keys (left and right) to cycle through the menus, and down to execute the selection. change the 'ca' and 'wipeout', after the exec commands, to whatever your .cfg files are named.</b><br>
+bind LEFTARROW "vstr sm_prev"<br>
+bind RIGHTARROW "vstr sm_next"<br>
+bind DOWNARROW "vstr sm_action"<br>
+set sm_prev vstr sm_menu03<br>
+set sm_next vstr sm_menu01<br>
+set sm_menu01 "set sm_next vstr sm_menu02; set sm_prev vstr sm_menu03; print ^7:[ ^1Shuffle^7 ExecCA ExecWipeout ]::; set sm_action callvote shuffle"<br>
+set sm_menu02 "set sm_next vstr sm_menu03; set sm_prev vstr sm_menu01; print ^7:[ Shuffle ^1ExecCA^7 ExecWipeout ]::; set sm_action exec ca"<br>
+set sm_menu03 "set sm_next vstr sm_menu01; set sm_prev vstr sm_menu02; print ^7:[ Shuffle ExecCA ^1ExecWipeout^7 ]::; set sm_action exec wipeout"<br>
