@@ -43,8 +43,8 @@ set sm_menu01 "set sm_next vstr sm_menu02; set sm_prev vstr sm_menu03; print ^7:
 set sm_menu02 "set sm_next vstr sm_menu03; set sm_prev vstr sm_menu01; print ^7:[ Shuffle ^1ExecCA^7 ExecWipeout ]::; set sm_action exec ca"<br>
 set sm_menu03 "set sm_next vstr sm_menu01; set sm_prev vstr sm_menu02; print ^7:[ Shuffle ExecCA ^1ExecWipeout^7 ]::; set sm_action exec wipeout"<br>
 <br><br>
-# Wipeouot Easy Key<br>
+# Wipeout Easy Key<br>
 <b>You can bind a key to these actions and not need to bind the 'say !power' command, for use in most games. Though you may want it for a way to change your power-up. Your choice.<br>
 The key, MOUSE3 here, will execute the !power command, pause, use item, unuse item, and execute !power again.<br>
-Since the QL Wipeout game starts you with the pwoer-up, this key will switch to the med-kit, use it, and switch back to the power-up.</b><br>
+Since the QL Wipeout game starts you with the power-up, this key will switch to the med-kit, use it, and switch back to the power-up.</b><br>
 bind MOUSE3 "say !power;wait 50;+button2;-button2;say !power"<br>
