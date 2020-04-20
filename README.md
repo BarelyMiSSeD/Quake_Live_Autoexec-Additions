@@ -32,7 +32,7 @@ set upbright4 "seta r_gamma 1.6; set brightness vstr upbright5"<br>
 set upbright5 "seta r_gamma 1.8; set brightness vstr dnbright6"<br>
 set dnbright6 "seta r_gamma 2.0; set brightness vstr upbright1"<br>
 <br><br>
-# CA/Wipeout cinfig switch Menu to callvote Shufffle, exec ca config, exec wipeout config
+# CA/Wipeout config switch Menu to callvote Shufffle, exec ca config, exec wipeout config
 <b>If you leave it undedited it will use the arrow keys (left and right) to cycle through the menus, and down to execute the selection. change the 'ca' and 'wipeout', after the exec commands, to whatever your .cfg files are named.</b><br>
 bind LEFTARROW "vstr sm_prev"<br>
 bind RIGHTARROW "vstr sm_next"<br>
