@@ -40,8 +40,10 @@ bind DOWNARROW "vstr sm_action"<br>
 set sm_prev vstr sm_menu03<br>
 set sm_next vstr sm_menu01<br>
 set sm_menu01 "set sm_next vstr sm_menu02; set sm_prev vstr sm_menu03; print ^7:[ ^1Shuffle^7 ExecCA ExecWipeout ]::; set sm_action callvote shuffle"<br>
-set sm_menu02 "set sm_next vstr sm_menu03; set sm_prev vstr sm_menu01; print ^7:[ Shuffle ^1ExecCA^7 ExecWipeout ]::; set sm_action exec ca"<br>
-set sm_menu03 "set sm_next vstr sm_menu01; set sm_prev vstr sm_menu02; print ^7:[ Shuffle ExecCA ^1ExecWipeout^7 ]::; set sm_action exec wipeout"<br>
+set sm_menu02 "set sm_next vstr sm_menu03; set sm_prev vstr sm_menu01; print ^7:[ Shuffle ^1ExecCA^7 ExecWipeout ]::; set sm_action vstr ca"<br>
+set sm_menu03 "set sm_next vstr sm_menu01; set sm_prev vstr sm_menu02; print ^7:[ Shuffle ExecCA ^1ExecWipeout^7 ]::; set sm_action vstr wipeout"<br>
+set ca "bind MWHEELDOWN weapprev"<br>
+set wipeout "bind MOUSE3 +button2;bind MWHEELDOWN say !power"<br>
 <br><br>
 # Wipeout Easy Key<br>
 <b>You can bind a key to these actions and not need to bind the 'say !power' command, for use in most games. Though you may want it for a way to change your power-up. Your choice.<br>
